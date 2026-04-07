@@ -44,16 +44,16 @@ if (!empty($subtitle)) {
     );
 }
 
-if (is_array($link) && !empty($link)) {
-    echo apply_filters(
-        'ogretemplate/article_header_link_html',
-        sprintf('<div class="entry-link">%s</div>', \Ogre::get_acf_link($link, apply_filters(
-            'ogretemplate/article_header_link_attributes',
-            [
-                'class' => 'entry-link__button button',
-            ]
-        ))),
-        $link,
-        $post_id
-    );
-}
+// if (is_array($link) && !empty($link)) {
+//     echo apply_filters(
+//         'ogretemplate/article_header_link_html',
+//         sprintf('<div class="entry-link">%s</div>', \Ogre::get_acf_link($link, apply_filters(
+//             'ogretemplate/article_header_link_attributes',
+//             [
+//                 'class' => 'entry-link__button button',
+//             ]
+//         ))),
+//         $link,
+//         $post_id
+//     );
+// }
