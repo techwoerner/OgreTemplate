@@ -1,0 +1,584 @@
+[
+    {
+        "key": "group_6584a36f7938c",
+        "title": "Block [Map (GL)]",
+        "fields": [
+            {
+                "key": "field_6584a556b6958",
+                "label": "Style",
+                "name": "style",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "Map tile styles are provided by https:\/\/tiles.cleverogre.com\/.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "basic": "Basic",
+                    "osm-bright": "Bright",
+                    "osm-liberty": "Liberty",
+                    "terrain": "Terrain",
+                    "terrain-background": "Terrain Background",
+                    "toner": "Toner",
+                    "toner-background": "Toner Background",
+                    "dark-matter": "Dark Matter",
+                    "positron": "Positron",
+                    "fiord-color": "Fiord Color",
+                    "3d": "3D",
+                    "build-a-brain": "Build a Brain"
+                },
+                "default_value": false,
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 1,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_65971d9f28f3b",
+                "label": "",
+                "name": "options",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "interactive": "Interactive",
+                    "tooltips": "Tooltips",
+                    "popups": "Popups",
+                    "cluster": "Cluster"
+                },
+                "default_value": [
+                    "interactive",
+                    "tooltips"
+                ],
+                "return_format": "value",
+                "allow_custom": 0,
+                "layout": "vertical",
+                "toggle": 0,
+                "save_custom": 0,
+                "custom_choice_button_text": "Add new choice"
+            },
+            {
+                "key": "field_6584a461b6954",
+                "label": "",
+                "name": "items",
+                "aria-label": "",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_6584a464d7944": {
+                        "key": "layout_6584a464d7944",
+                        "name": "marker",
+                        "label": "Marker",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_6584c283ce015",
+                                "label": "",
+                                "name": "title",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971d9f28f3b",
+                                            "operator": "==",
+                                            "value": "tooltips"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "Title",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_6584a370b694d",
+                                "label": "",
+                                "name": "location",
+                                "aria-label": "",
+                                "type": "google_map",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "center_lat": "30.4368739",
+                                "center_lng": "-87.192744",
+                                "zoom": 14,
+                                "height": 200
+                            },
+                            {
+                                "key": "field_65971d5528f3a",
+                                "label": "",
+                                "name": "content",
+                                "aria-label": "",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971d9f28f3b",
+                                            "operator": "==",
+                                            "value": "popups"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "rows": 3,
+                                "placeholder": "Popup Content",
+                                "new_lines": "wpautop"
+                            },
+                            {
+                                "key": "field_6584a45bb6953",
+                                "label": "",
+                                "name": "link",
+                                "aria-label": "",
+                                "type": "link",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "layout_6584a48ab6955": {
+                        "key": "layout_6584a48ab6955",
+                        "name": "geojson",
+                        "label": "GeoJSON",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_6584a428b6950",
+                                "label": "",
+                                "name": "file",
+                                "aria-label": "",
+                                "type": "file",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "library": "all",
+                                "min_size": "",
+                                "max_size": "",
+                                "mime_types": "json, geojson"
+                            },
+                            {
+                                "key": "field_65971bb732263",
+                                "label": "",
+                                "name": "type",
+                                "aria-label": "",
+                                "type": "checkbox",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "fill": "Fill",
+                                    "line": "Line",
+                                    "circle": "Circle"
+                                },
+                                "default_value": [],
+                                "return_format": "value",
+                                "allow_custom": 0,
+                                "layout": "horizontal",
+                                "toggle": 0,
+                                "save_custom": 0,
+                                "custom_choice_button_text": "Add new choice"
+                            },
+                            {
+                                "key": "field_65971cc73226a",
+                                "label": "Fill",
+                                "name": "",
+                                "aria-label": "",
+                                "type": "accordion",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "fill"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "open": 0,
+                                "multi_expand": 1,
+                                "endpoint": 0
+                            },
+                            {
+                                "key": "field_65971c1632264",
+                                "label": "Color",
+                                "name": "fill_color",
+                                "aria-label": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "fill"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "enable_opacity": 1,
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_65971ced3226b",
+                                "label": "Line",
+                                "name": "",
+                                "aria-label": "",
+                                "type": "accordion",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "line"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "open": 0,
+                                "multi_expand": 1,
+                                "endpoint": 0
+                            },
+                            {
+                                "key": "field_65971c5132266",
+                                "label": "Color",
+                                "name": "line_color",
+                                "aria-label": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "line"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "enable_opacity": 1,
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_65971ca532269",
+                                "label": "Width",
+                                "name": "line_width",
+                                "aria-label": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "line"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 1,
+                                "min": 0,
+                                "max": "",
+                                "placeholder": "",
+                                "step": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_65971d003226c",
+                                "label": "Circle",
+                                "name": "",
+                                "aria-label": "",
+                                "type": "accordion",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "circle"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "open": 0,
+                                "multi_expand": 1,
+                                "endpoint": 0
+                            },
+                            {
+                                "key": "field_65971c6b32267",
+                                "label": "Fill Color",
+                                "name": "circle_color",
+                                "aria-label": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "circle"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "enable_opacity": 1,
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_65971c8232268",
+                                "label": "Radius",
+                                "name": "circle_radius",
+                                "aria-label": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "circle"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 5,
+                                "min": 0,
+                                "max": "",
+                                "placeholder": "",
+                                "step": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_65971d183226d",
+                                "label": "Stroke Color",
+                                "name": "circle_stroke_color",
+                                "aria-label": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "circle"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "enable_opacity": 1,
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_65971d323226f",
+                                "label": "Stroke Width",
+                                "name": "circle_stroke_width",
+                                "aria-label": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_65971bb732263",
+                                            "operator": "==",
+                                            "value": "circle"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 1,
+                                "min": 0,
+                                "max": "",
+                                "placeholder": "",
+                                "step": "",
+                                "prepend": "",
+                                "append": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "min": "",
+                "max": "",
+                "button_label": "Add Row"
+            },
+            {
+                "key": "field_6584a4b6b6957",
+                "label": "Zoom",
+                "name": "zoom",
+                "aria-label": "",
+                "type": "range",
+                "instructions": "If multiple elements are provided, zoom will be automatically calculated.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 14,
+                "min": 0,
+                "max": 20,
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6584a447b6952",
+                "label": "Caption",
+                "name": "caption",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "rows": 3,
+                "placeholder": "",
+                "new_lines": "br"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/map-gl"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

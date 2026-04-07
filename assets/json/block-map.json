@@ -1,0 +1,194 @@
+[
+    {
+        "key": "group_60381101c1536",
+        "title": "Block [Map (Leaflet)]",
+        "fields": [
+            {
+                "key": "field_6038110d4500c",
+                "label": "",
+                "name": "type",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Marker": "Marker",
+                    "GeoJSON": "GeoJSON"
+                },
+                "allow_null": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_6038112e4500d",
+                "label": "",
+                "name": "location",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6038110d4500c",
+                            "operator": "==",
+                            "value": "Marker"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "",
+                "center_lng": "",
+                "zoom": "",
+                "height": 200
+            },
+            {
+                "key": "field_6038116b4500e",
+                "label": "",
+                "name": "file",
+                "type": "file",
+                "instructions": "You can create a geojson file at https:\/\/geojson.io\/.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6038110d4500c",
+                            "operator": "==",
+                            "value": "GeoJSON"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": "json"
+            },
+            {
+                "key": "field_60381262fae64",
+                "label": "",
+                "name": "caption",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Caption...",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_617c181705cb3",
+                "label": "",
+                "name": "link",
+                "type": "link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array"
+            },
+            {
+                "key": "field_617c20b3fff3f",
+                "label": "",
+                "name": "zoom",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 18,
+                "min": 1,
+                "max": 18,
+                "step": 1,
+                "prepend": "Zoom",
+                "append": ""
+            },
+            {
+                "key": "field_617c21b56093b",
+                "label": "",
+                "name": "style",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "basic": "Basic",
+                    "wiki": "Wiki (alias of Basic)",
+                    "bright": "OSM Bright",
+                    "liberty": "OSM Liberty",
+                    "terrain": "Terrain",
+                    "terrain_background": "Terrain Background",
+                    "toner": "Toner",
+                    "toner_background": "Toner Background",
+                    "monochrome": "Monochrome (alias of Toner)",
+                    "dark_matter": "Dark Matter",
+                    "positron": "Positron",
+                    "grayscale": "Grayscale (alias of Positron)",
+                    "fiord_color": "Fiord Color",
+                    "three_d": "3D",
+                    "default": "Default (OpenStreetMaps)",
+                    "satellite": "Satellite (ArcGIS)",
+                    "watercolor": "Watercolor (Smithsonian)"
+                },
+                "default_value": "default",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/map"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

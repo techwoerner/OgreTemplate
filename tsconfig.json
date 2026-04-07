@@ -1,0 +1,64 @@
+{
+    "compilerOptions": {
+        "lib": ["es6", "dom", "es2017"],
+        "target": "es5",
+        "module": "none",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "noImplicitUseStrict": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "ignoreDeprecations": "5.0",
+        "suppressImplicitAnyIndexErrors": true,
+
+        "outDir": "./assets/js/",
+        "outFile": "./assets/js/theme.js",
+        "sourceRoot": "./assets/ts/",
+        "rootDir": "./assets/ts/",
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules",
+        "typings/browser",
+        "typings/browser.d.ts"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": true,
+    "atom": {
+        "rewriteTsconfig": false
+    },
+    "files": [
+        "./assets/ts/theme.ts",
+        "./assets/ts/helpers/polyfill.ts",
+        "./assets/ts/helpers/helper.ts",
+        "./assets/ts/modules/disabled.ts",
+        "./assets/ts/modules/svg.ts",
+        "./assets/ts/modules/device.ts",
+        "./assets/ts/modules/fullheight.ts",
+        "./assets/ts/modules/ajax.ts",
+        "./assets/ts/modules/breakwords.ts",
+        "./assets/ts/modules/expander.ts",
+        "./assets/ts/modules/gforms.ts",
+        "./assets/ts/modules/gif.ts",
+        "./assets/ts/modules/header.ts",
+        "./assets/ts/modules/maps.ts",
+        "./assets/ts/modules/maps-gl.ts",
+        "./assets/ts/modules/masonry.ts",
+        "./assets/ts/modules/modal.ts",
+        "./assets/ts/modules/parallax.ts",
+        "./assets/ts/modules/reveal.ts",
+        "./assets/ts/modules/schema-faq-expanders.ts",
+        "./assets/ts/modules/scrollbar.ts",
+        "./assets/ts/modules/scrollspy.ts",
+        "./assets/ts/modules/sliders.ts",
+        "./assets/ts/modules/slider-menu.ts",
+        "./assets/ts/modules/touch-scroll.ts",
+        "./assets/ts/modules/woocommerce.ts"
+    ]
+}

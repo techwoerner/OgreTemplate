@@ -1,0 +1,142 @@
+[
+    {
+        "key": "group_607f4549df954",
+        "title": "Block [Reveal]",
+        "fields": [
+            {
+                "key": "field_607f458323746",
+                "label": "Type",
+                "name": "type",
+                "type": "select",
+                "instructions": "Select multiple choices to combine animations. Slide, grow, and shrink may not work properly in combination.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fade": "<i class=\"dashicons dashicons-image-filter\"><\/i> Fade In",
+                    "slide-up": "<i class=\"dashicons dashicons-arrow-up-alt\"><\/i> Slide Up",
+                    "slide-down": "<i class=\"dashicons dashicons-arrow-down-alt\"><\/i> Slide Down",
+                    "slide-left": "<i class=\"dashicons dashicons-arrow-left-alt\"><\/i> Slide Left",
+                    "slide-right": "<i class=\"dashicons dashicons-arrow-right-alt\"><\/i> Slide Right",
+                    "wipe-up": "<i class=\"dashicons dashicons-arrow-up-alt2\"><\/i> Wipe Up",
+                    "wipe-down": "<i class=\"dashicons dashicons-arrow-down-alt2\"><\/i> Wipe Down",
+                    "wipe-left": "<i class=\"dashicons dashicons-arrow-left-alt2\"><\/i> Wipe Left",
+                    "wipe-right": "<i class=\"dashicons dashicons-arrow-right-alt2\"><\/i> Wipe Right",
+                    "grow": "<i class=\"dashicons dashicons-fullscreen-alt\"><\/i> Grow",
+                    "shrink": "<i class=\"dashicons dashicons-fullscreen-exit-alt\"><\/i> Shrink"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 1,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_607f456923745",
+                "label": "Duration",
+                "name": "duration",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 3,
+                "placeholder": "",
+                "prepend": "",
+                "append": "seconds",
+                "min": "0.1",
+                "max": "",
+                "step": "0.1"
+            },
+            {
+                "key": "field_60a6da72b551b",
+                "label": "Delay",
+                "name": "delay",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": "seconds",
+                "min": 0,
+                "max": "",
+                "step": "0.1"
+            },
+            {
+                "key": "field_618d3f1f21579",
+                "label": "Trigger",
+                "name": "trigger",
+                "type": "button_group",
+                "instructions": "How to you want the reveal animation to begin?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "visible": "Visible",
+                    "center": "Center"
+                },
+                "allow_null": 0,
+                "default_value": "visible",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_618d3f712157a",
+                "label": "",
+                "name": "toggle",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Allow the reveal to toggle?",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/reveal"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

@@ -1,0 +1,171 @@
+[
+    {
+        "key": "group_5f21e64766de0",
+        "title": "Block [Texture]",
+        "fields": [
+            {
+                "key": "field_5f21e666810fc",
+                "label": "",
+                "name": "image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "png,svg,jpg"
+            },
+            {
+                "key": "field_5f21e673810fd",
+                "label": "Position",
+                "name": "position",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "center": "<i class=\"dashicons dashicons-align-center\"><\/i>",
+                    "top": "<i class=\"dashicons dashicons-arrow-up\"><\/i>",
+                    "bottom": "<i class=\"dashicons dashicons-arrow-down\"><\/i>",
+                    "left": "<i class=\"dashicons dashicons-arrow-left\"><\/i>",
+                    "right": "<i class=\"dashicons dashicons-arrow-right\"><\/i>",
+                    "top-left": "<i class=\"dashicons dashicons-arrow-left\"><\/i><i class=\"dashicons dashicons-arrow-up\"><\/i>"
+                },
+                "allow_null": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5f21e721a4a94",
+                "label": "Opacity",
+                "name": "opacity",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 100,
+                "min": 0,
+                "max": 100,
+                "step": 5,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5f74fc033f2f8",
+                "label": "Z-Index",
+                "name": "index",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 20,
+                "min": 0,
+                "max": 20,
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5f80d5d0f8d16",
+                "label": "Size",
+                "name": "size",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "thumbnail": "Thumbnail",
+                    "medium": "Medium",
+                    "large": "Large",
+                    "extra-large": "Extra-Large"
+                },
+                "default_value": "extra-large",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5fbbe7365fc89",
+                "label": "Fit",
+                "name": "fit",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "cover": "Cover",
+                    "contain": "Contain",
+                    "auto": "Auto",
+                    "width": "Fit Width",
+                    "height": "Fit Height",
+                    "repeat": "Repeat"
+                },
+                "default_value": "cover",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/texture"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

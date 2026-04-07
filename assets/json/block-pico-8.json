@@ -1,0 +1,75 @@
+[
+    {
+        "key": "group_610d4a9b05c1a",
+        "title": "Block [PICO-8]",
+        "fields": [
+            {
+                "key": "field_610d4aa666a07",
+                "label": "",
+                "name": "script",
+                "type": "file",
+                "instructions": "Upload the js file provided when exporting your game.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "75",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": "js"
+            },
+            {
+                "key": "field_61118c51e4fe7",
+                "label": "",
+                "name": "image",
+                "type": "image",
+                "instructions": "Thumbnail for your game file. A resolution of 128x128 is preferred.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_610d4aa666a07",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/pico-8"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

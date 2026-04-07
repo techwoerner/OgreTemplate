@@ -1,0 +1,345 @@
+[
+    {
+        "key": "group_5f21a12496d83",
+        "title": "Block [Parallax Background]",
+        "fields": [
+            {
+                "key": "field_5f21a1281fbba",
+                "label": "",
+                "name": "image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_60ba54a49eaf8",
+                "label": "",
+                "name": "opacity",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 100,
+                "min": 0,
+                "max": 100,
+                "step": 10,
+                "prepend": "Opacity",
+                "append": ""
+            },
+            {
+                "key": "field_5f21c8c9f16ca",
+                "label": "Position",
+                "name": "position",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "top": "<i class=\"dashicons dashicons-arrow-up\"><\/i>",
+                    "bottom": "<i class=\"dashicons dashicons-arrow-down\"><\/i>",
+                    "left": "<i class=\"dashicons dashicons-arrow-left\"><\/i>",
+                    "right": "<i class=\"dashicons dashicons-arrow-right\"><\/i>",
+                    "center": "<i class=\"dashicons dashicons-align-center\"><\/i>"
+                },
+                "allow_null": 0,
+                "default_value": "top",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5f21a12e1fbbb",
+                "label": "",
+                "name": "rate",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 1,
+                "placeholder": "",
+                "prepend": "Rate",
+                "append": "",
+                "min": -2,
+                "max": 2,
+                "step": "0.01"
+            },
+            {
+                "key": "field_60b913baf4b2f",
+                "label": "",
+                "name": "z-index",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 5,
+                "placeholder": "",
+                "prepend": "Z-Index",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": 1
+            },
+            {
+                "key": "field_5f21a17d1fbbc",
+                "label": "",
+                "name": "center_origin",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Center rate to origin",
+                "default_value": 1,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5f21dbc85528c",
+                "label": "",
+                "name": "bottom_origin",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Center rate to bottom of screen",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5f21a1901fbbd",
+                "label": "",
+                "name": "stop_origin",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Stop movement at origin",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5f21a19d1fbbe",
+                "label": "",
+                "name": "fade",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Fade",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5f21a1c11fbbf",
+                "label": "",
+                "name": "fade_rate",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5f21a19d1fbbe",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 1,
+                "placeholder": "",
+                "prepend": "Fade Rate",
+                "append": "",
+                "min": -2,
+                "max": 2,
+                "step": "0.01"
+            },
+            {
+                "key": "field_5f21a1d91fbc0",
+                "label": "",
+                "name": "fade_stop_origin",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5f21a19d1fbbe",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Stop fade at origin",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_5fb412de53f40",
+                "label": "",
+                "name": "transform_disabled",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Disable image translate transform",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_61006bb2bcf3d",
+                "label": "",
+                "name": "transform_custom_x",
+                "type": "number",
+                "instructions": "Custom transform position (x-axis, relative to image size)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5fb412de53f40",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 0,
+                "prepend": "X",
+                "append": "%",
+                "min": "",
+                "max": "",
+                "step": 1
+            },
+            {
+                "key": "field_5fb4320e0640f",
+                "label": "",
+                "name": "transform_custom",
+                "type": "number",
+                "instructions": "Custom transform position (y-axis, relative to image size)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5fb412de53f40",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": 0,
+                "prepend": "Y",
+                "append": "%",
+                "min": "",
+                "max": "",
+                "step": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/parallax-image"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

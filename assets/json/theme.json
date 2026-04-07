@@ -1,0 +1,86 @@
+{
+    "version": 2,
+    "settings": {
+        "appearanceTools": false,
+        "border": {
+            "color": false,
+            "radius": false,
+            "style": false,
+            "width": false
+        },
+        "color": {
+            "background": true,
+            "custom": false,
+            "customDuotone": true,
+            "customGradient": true,
+            "defaultGradients": false,
+            "defaultPalette": false,
+            "duotone": [],
+            "gradients": [],
+            "link": false,
+            "palette": [
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#ffffff"
+                }
+            ],
+            "text": true
+        },
+        "custom": {},
+        "layout": {
+            "contentSize": "1140px",
+            "wideSize": "1540px"
+        },
+        "spacing": {
+            "blockGap": false,
+            "margin": false,
+            "padding": false,
+            "units": [ "rem", "vh", "vw" ]
+        },
+        "typography": {
+            "customFontSize": false,
+            "dropCap": true,
+            "fontFamilies": [],
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "name": "Small",
+                    "size": "0.75rem"
+                },
+                {
+                    "slug": "normal",
+                    "name": "Normal",
+                    "size": "1.125rem"
+                },
+                {
+                    "slug": "medium",
+                    "name": "Medium",
+                    "size": "1.5rem"
+                },
+                {
+                    "slug": "large",
+                    "name": "Large",
+                    "size": "2.25rem"
+                },
+                {
+                    "slug": "huge",
+                    "name": "Huge",
+                    "size": "4.5rem"
+                }
+            ],
+            "fontStyle": true,
+            "fontWeight": true,
+            "letterSpacing": false,
+            "lineHeight": false,
+            "textDecoration": true,
+            "textTransform": true
+        },
+        "blocks": {}
+    }
+}
