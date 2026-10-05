@@ -18,6 +18,7 @@ $classes = array_filter(array_map('sanitize_html_class', $classes));
             <?php do_action('ogre/footer_after'); ?>
         </div>
         <?php do_action('ogre/page_after'); ?>
+        <?php do_action('ogrepaver/hidden_sidebar'); ?>
         <?php wp_footer(); ?>
     </body>
 </html>
