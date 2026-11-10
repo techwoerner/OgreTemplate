@@ -3849,7 +3849,7 @@ var OgreMaps = (function () {
     function OgreMaps() {
         this.leafletScripts = [
             'https://unpkg.com/leaflet/dist/leaflet.js',
-            'https://unpkg.com/maplibre-gl/dist/maplibre-gl.js',
+            'https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js',
         ];
         this.leafletScriptsLoaded = false;
         this.leafletExtensions = [
